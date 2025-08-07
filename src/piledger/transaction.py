@@ -1,5 +1,6 @@
 
 class Transaction():
+    # Initialization
     def __init__(self, notxn : int, date : str, compte : str, montant : float, commentaire : str):
         self.no_txn = notxn
         self.date = date
@@ -8,6 +9,7 @@ class Transaction():
         if commentaire.strip() is not None: 
             self.commentaire = commentaire
     
+    # Display methods
     def afficher(self):
         print(f"Transaction {self.no_txn} - {self.date}")
         print(f"  Compte: {self.compte}")
