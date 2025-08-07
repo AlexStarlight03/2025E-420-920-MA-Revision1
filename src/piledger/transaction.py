@@ -1,5 +1,4 @@
 
-
 class Transaction():
     def __init__(self, notxn : int, date : str, compte : str, montant : float, commentaire : str):
         self.no_txn = notxn
